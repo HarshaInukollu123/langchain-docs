@@ -1,0 +1,27 @@
+[project]
+name = "langchain-magic"
+version = "0.1.0"
+description = "30 days of LangChain, LangGraph and LangSmith: one runnable lesson per day"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=1.0",
+    "langgraph>=1.0",
+    "langsmith",
+    "python-dotenv",
+]
+
+# Install ONE provider package, matching the MODEL_NAME you choose in .env
+#   uv sync --extra openai      (or: anthropic / google)
+[project.optional-dependencies]
+openai = ["langchain-openai"]
+anthropic = ["langchain-anthropic"]
+google = ["langchain-google-genai"]
+
+# Makes `from shared.config import ...` work in every lesson after `uv sync`.
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["shared"]

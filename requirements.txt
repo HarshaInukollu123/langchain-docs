@@ -1,0 +1,16 @@
+# Install with:  pip install -r requirements.txt
+# (Prefer uv? Use `uv sync --extra openai` instead - see the README.)
+
+# Makes `from shared.config import ...` work inside every lesson.
+-e .
+
+# Core libraries used across the 30 days
+langchain>=1.0
+langgraph>=1.0
+langsmith
+python-dotenv
+
+# Model provider: UNCOMMENT THE ONE YOU HAVE A KEY FOR (it must match MODEL_NAME in .env)
+langchain-openai
+# langchain-anthropic
+# langchain-google-genai
