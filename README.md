@@ -64,15 +64,4 @@ From Day 5 onward we also use **LangSmith** for tracing. Create a free account a
 | 4 | Human-in-the-loop, multi-agent, streaming | 19 `interrupt()` approvals · 20 Edit/reject, retries, idempotency · 21 Subgraphs · 22 Supervisor · 23 Stream modes · 24 Custom events |
 | 5 | Guardrails, evals, production | 25 Guardrails · 26 Datasets and offline evals · 27 Online evals and feedback · 28 Testing graphs · 29 Deploying · 30 Capstone |
 
-### Progress
 
-| Day | Lesson | Status |
-|---|---|---|
-| 01 | [Chat models](lessons/day-01-chat-models/document.md) | ✅ Ready |
-| 02 | Messages | ⏳ Planned |
-
-*(The table grows as each lesson ships. Each row will link to that day's LinkedIn post.)*
-
-## Coming after Day 30
-
-Functional API, handoffs and swarm, RAG and agentic RAG, MCP tools, prompt hub, caching and rate limits, multimodal inputs, Deep Agents.

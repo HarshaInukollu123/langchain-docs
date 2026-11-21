@@ -25,7 +25,7 @@ your prompt  ──►  model.invoke()  ──►  AIMessage
 
 Three things to remember:
 
-1. **`init_chat_model`** builds the model. You pass `"provider:model-name"`, for example `openai:gpt-5.4-mini`. Swap the string and you have swapped the provider.
+1. **`init_chat_model`** builds the model. You pass `"provider:model-name"`, for example `openai:gpt-4o-mini`. Swap the string and you have swapped the provider.
 2. **`invoke`** sends the prompt and waits for the full reply.
 3. **Settings** such as `temperature` (steady vs. varied answers) and `max_tokens` (maximum reply length) are passed when you build the model.
 
