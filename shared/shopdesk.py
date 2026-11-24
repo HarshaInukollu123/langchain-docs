@@ -23,3 +23,33 @@ SYSTEM_PROMPT = (
 # ... and the customer's follow-up. "it" only makes sense if you remember
 # the first message, which is the whole point of the lesson.
 FOLLOW_UP_MESSAGE = "Thanks. Could you send it to my office address instead?"   
+
+ORDERS = {
+    "1042": {
+        "item": "Trail Runner running shoes",
+        "status": "In transit",
+        "detail": "Shipped with SwiftShip, delayed at the regional hub. "
+        "Expected within 2 business days.",
+    },
+    "1043": {
+        "item": "Wool hiking socks (2-pack)",
+        "status": "Delivered",
+        "detail": "Left at the front door yesterday.",
+    },
+}
+ 
+STOCK = {
+    "trail runner running shoes": 14,
+    "wool hiking socks": 0,
+}
+ 
+# Same ShopDesk, but now it is allowed (and expected) to use its tools.
+TOOLS_SYSTEM_PROMPT = (
+    f"You are {SHOP_NAME}, a friendly support agent for an online store. "
+    "Reply in at most 3 sentences. You have tools to look up orders and to "
+    "check stock. Use them whenever the customer asks about an order or a "
+    "product, and base your answer only on what the tools return."
+)
+ 
+# A message that needs no tool at all.
+THANKS_MESSAGE = "Thanks, that's all I needed!"
