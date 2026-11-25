@@ -53,3 +53,18 @@ TOOLS_SYSTEM_PROMPT = (
  
 # A message that needs no tool at all.
 THANKS_MESSAGE = "Thanks, that's all I needed!"
+
+INBOX_MESSAGES = [
+    (
+        "URGENT!! Order #1042 was due Friday and the tracking hasn't moved in "
+        "3 days. It's my daughter's birthday tomorrow. If it isn't here I want "
+        "a refund and I want to talk to a manager."
+    ),
+    "Hello, are the wool hiking socks back in stock? No rush at all.",
+]
+ 
+TRIAGE_SYSTEM_PROMPT = (
+    f"You are the triage assistant for {SHOP_NAME}, an online store. "
+    "Read the customer's message and fill in the ticket. "
+    "Do not reply to the customer."
+)
