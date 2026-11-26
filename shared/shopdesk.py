@@ -68,3 +68,6 @@ TRIAGE_SYSTEM_PROMPT = (
     "Read the customer's message and fill in the ticket. "
     "Do not reply to the customer."
 )
+
+
+LANGSMITH_AGENT_NAME = "shopdesk"
